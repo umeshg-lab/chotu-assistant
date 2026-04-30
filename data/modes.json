@@ -1,0 +1,37 @@
+{
+  "morning_routine": {
+    "name": "Morning Routine",
+    "description": "Start the day right",
+    "steps": [
+      {"type": "speak", "text": "Good morning. Starting your day."},
+      {"type": "open_app", "target": "chrome"},
+      {"type": "open_url", "url": "https://mail.google.com"},
+      {"type": "media", "action": "play", "playlist": "focus"},
+      {"type": "set_volume", "level": 50}
+    ]
+  },
+  "night_shutdown": {
+    "name": "Night Shutdown",
+    "description": "End of day cleanup",
+    "steps": [
+      {"type": "speak", "text": "Wrapping up. Saving everything."},
+      {"type": "close_app", "target": "chrome"},
+      {"type": "close_app", "target": "vscode"},
+      {"type": "set_dnd", "enabled": false},
+      {"type": "speak", "text": "All done. Goodnight."}
+    ]
+  },
+  "client_mode": {
+    "name": "Client Mode",
+    "description": "Professional client-facing setup",
+    "steps": [
+      {"type": "close_app", "target": "discord"},
+      {"type": "close_app", "target": "steam"},
+      {"type": "close_app", "target": "spotify"},
+      {"type": "open_app", "target": "chrome"},
+      {"type": "open_url", "url": "https://www.notion.so"},
+      {"type": "set_dnd", "enabled": true},
+      {"type": "speak", "text": "Client mode active. Professional environment ready."}
+    ]
+  }
+}

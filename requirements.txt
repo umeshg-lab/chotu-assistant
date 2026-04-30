@@ -1,0 +1,46 @@
+# JARVIS Requirements
+# Install: pip install -r requirements.txt
+
+# ── UI ─────────────────────────────────────────────────────────────────────
+PyQt6>=6.6.0
+
+# ── System ─────────────────────────────────────────────────────────────────
+psutil>=5.9.0
+pywin32>=306
+
+# ── Audio input ─────────────────────────────────────────────────────────────
+pyaudio>=0.2.13
+SpeechRecognition>=3.10.0    # NOTE: PyPI name is 'SpeechRecognition' (capital S and R)
+                              #       NOT 'speech_recognition' — that package does not exist
+
+# ── Wake word (offline, CPU) ────────────────────────────────────────────────
+openwakeword>=0.5.1
+numpy>=1.24.0                 # required by openwakeword at runtime
+
+# ── Whisper STT — choose ONE ────────────────────────────────────────────────
+# whispercpp>=0.0.17           # Fast C++ binding (recommended for production)
+# openai-whisper>=20231117     # Python-native fallback
+soundfile>=0.12.1              # required by openai-whisper audio loading pipeline
+
+# ── TTS — choose ONE ────────────────────────────────────────────────────────
+pyttsx3>=2.90                  # Always-available fallback (Windows SAPI — no model needed)
+# piper-tts>=1.2.0             # Best quality offline TTS
+                               # Also install piper binary: https://github.com/rhasspy/piper/releases
+
+# ── Volume control (Windows) ────────────────────────────────────────────────
+pycaw>=20230407
+comtypes>=1.2.0
+
+# ── Automation ──────────────────────────────────────────────────────────────
+pyautogui>=0.9.54
+Pillow>=10.0.0
+
+# ── Storage ─────────────────────────────────────────────────────────────────
+# sqlite3 is built-in — no pip package needed
+
+# ── Optional extras ─────────────────────────────────────────────────────────
+# winshell>=0.6               # For empty_recycle_bin (fallback to PowerShell if absent)
+# pygetwindow>=0.0.9          # Window management
+
+# ── Build (development only) ────────────────────────────────────────────────
+# PyInstaller>=6.0.0

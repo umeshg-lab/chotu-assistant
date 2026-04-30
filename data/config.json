@@ -1,0 +1,49 @@
+{
+  "wake_word": "jarvis",
+  "whisper_model": "models/whisper/ggml-small.en.bin",
+  "piper_model": "models/piper/en_US-lessac-medium.onnx",
+  "piper_config": "models/piper/en_US-lessac-medium.onnx.json",
+  "tts_rate": 175,
+  "tts_volume": 1.0,
+  "stt_timeout": 8,
+  "stt_phrase_limit": 15,
+  "startup_message": "JARVIS online. How can I help?",
+  "start_with_windows": false,
+  "minimize_to_tray": true,
+  "theme": "dark",
+  "active_mode": "standard",
+  "app_paths": {
+    "chrome": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "firefox": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+    "vscode": "C:\\Users\\%USERNAME%\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+    "photoshop": "C:\\Program Files\\Adobe\\Adobe Photoshop *\\Photoshop.exe",
+    "premiere": "C:\\Program Files\\Adobe\\Adobe Premiere Pro *\\Adobe Premiere Pro.exe",
+    "steam": "C:\\Program Files (x86)\\Steam\\steam.exe",
+    "epic": "C:\\Program Files (x86)\\Epic Games\\Launcher\\Portal\\Binaries\\Win32\\EpicGamesLauncher.exe",
+    "spotify": "C:\\Users\\%USERNAME%\\AppData\\Roaming\\Spotify\\Spotify.exe",
+    "notepad": "notepad.exe",
+    "explorer": "explorer.exe",
+    "taskmgr": "taskmgr.exe",
+    "vlc": "C:\\Program Files\\VideoLAN\\VLC\\vlc.exe",
+    "discord": "C:\\Users\\%USERNAME%\\AppData\\Local\\Discord\\app-*\\Discord.exe",
+    "obs": "C:\\Program Files\\obs-studio\\bin\\64bit\\obs64.exe",
+    "notion": "C:\\Users\\%USERNAME%\\AppData\\Local\\Programs\\Notion\\Notion.exe"
+  },
+  "browser_shortcuts": {
+    "envato": "https://elements.envato.com",
+    "freepik": "https://www.freepik.com",
+    "pinterest": "https://www.pinterest.com",
+    "youtube": "https://www.youtube.com",
+    "gmail": "https://mail.google.com",
+    "github": "https://github.com",
+    "notion": "https://www.notion.so",
+    "figma": "https://www.figma.com"
+  },
+  "music_playlists": {
+    "design": "https://open.spotify.com/playlist/37i9dQZF1DX8Uebhn9wzrS",
+    "focus": "https://open.spotify.com/playlist/37i9dQZF1DWZeKCadgRdKQ",
+    "gaming": "https://open.spotify.com/playlist/37i9dQZF1DWTyiBJ6yEqeu",
+    "lofi": "https://www.youtube.com/watch?v=jfKfPfyJRdk",
+    "editing": "https://open.spotify.com/playlist/37i9dQZF1DX4sWSpwq3LiO"
+  }
+}
